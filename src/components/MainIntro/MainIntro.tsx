@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { SectionWrapper } from "../Layout/SectionWrapper";
-
+import MouseIcon from "/public/assets/mouse-icon.png";
 import styled from "styled-components";
+import Image from "next/image";
 
 const MainIntro = () => {
   return (
@@ -27,7 +28,10 @@ const MainIntro = () => {
             </div>
           </div>
         </Descriptions>
-        <ScrollGuide></ScrollGuide>
+
+        <ScrollGuide>
+          <Image src={MouseIcon} alt="mouse-icon" />
+        </ScrollGuide>
       </Introduce>
     </SectionWrapper>
   );
@@ -73,6 +77,26 @@ const Descriptions = styled.div`
   > div {
     top: 0;
     opacity: 1;
+    &:nth-child(1) {
+      animation: 0.7s ease-in 0s alternate none running fade-in;
+    }
+    &:nth-child(2) {
+      animation: 0.71s ease-in 0s alternate none running fade-in;
+    }
+    &:nth-child(3) {
+      animation: 0.72s ease-in 0s alternate none running fade-in;
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
   }
 `;
 
@@ -101,5 +125,36 @@ export const Description = styled.span`
   }
 `;
 
-export const ScrollGuide = styled.div``;
+export const ScrollGuide = styled.div`
+  position: absolute;
+  width: 73px;
+  min-width: 73px;
+  display: block;
+  bottom: 0px;
+  padding-bottom: 50px;
+  left: 50%;
+  animation: 0.7s ease-in 0s infinite alternate none running jump;
+  transform: translateX(-50%);
+
+  @media (min-width: 768px) {
+    width: 3.8%;
+    min-width: 48px;
+    position: absolute;
+    animation: 0.7s ease-in 0s infinite alternate none running jump;
+    display: block;
+    bottom: 0px;
+    padding-bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @keyframes jump {
+    from {
+      padding-bottom: 100px;
+    }
+    to {
+      padding-bottom: 50px;
+    }
+  }
+`;
 export default MainIntro;
