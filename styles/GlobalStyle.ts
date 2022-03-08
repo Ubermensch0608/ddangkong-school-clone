@@ -6,13 +6,14 @@ const GlobalStyle = createGlobalStyle`
 
     * {
     box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #333333;
     }
 
     html,
     body {
     padding: 0;
     margin: 0;
-    font-family: 'Noto Sans KR', sans-serif;
     }
 
     a {

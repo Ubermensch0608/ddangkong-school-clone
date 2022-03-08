@@ -44,7 +44,7 @@ const MainHeader = styled.header`
   position: fixed;
   z-index: 5;
   padding: 0 20px;
-  background-color: #fff;
+  background-color: transparent;
   transition: all 0.5s ease 0s;
   box-shadow: rgb(0 0 0 / 3%) 0px 30px 30px 0px;
   width: 100%;
