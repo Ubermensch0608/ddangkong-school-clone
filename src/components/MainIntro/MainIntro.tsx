@@ -49,21 +49,14 @@ export const ScrollGuide = styled.div`
   @media (min-width: 768px) {
     width: 3.8%;
     min-width: 48px;
-    position: absolute;
-    animation: 0.7s ease-in 0s infinite alternate none running jump;
-    display: block;
-    bottom: 0px;
-    padding-bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
   }
 
   @keyframes jump {
     from {
-      padding-bottom: 100px;
+      transform: translateY(-50px);
     }
     to {
-      padding-bottom: 50px;
+      transform: translateY(0px);
     }
   }
 `;
