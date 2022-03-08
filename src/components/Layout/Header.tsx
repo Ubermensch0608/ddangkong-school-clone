@@ -107,26 +107,17 @@ const RightAside = styled.div`
     display: none;
   }
 
-  > :nth-child(1) {
+  > * {
+    color: /*rgb(51, 51, 51);*/ rgb(255, 255, 255);
     position: relative;
     font-size: 16px;
-    color: rgb(51, 51, 51);
-    text-decoration: none;
+  }
+
+  > :nth-child(1) {
     margin-right: 50px;
   }
 
-  > :nth-child(2) {
-    position: relative;
-
-    > a {
-      font-size: 16px;
-      color: rgb(51, 51, 51); /* props 받아서 스크롤 할때는 하얀색으로 */
-      text-decoration: none;
-    }
-  }
-
   > :nth-child(3) {
-    color: rgb(51, 51, 51); /* color: rgb(255, 255, 255); */
     margin: 0px 50px 2px;
     width: 1.5px;
     align-items: center;
@@ -135,17 +126,7 @@ const RightAside = styled.div`
   }
 
   > :nth-child(4) {
-    background: none;
-    position: relative;
-    font-size: 16px;
-    color: rgb(51, 51, 51);
     margin-right: 50px;
-  }
-
-  > :nth-child(5) {
-    position: relative;
-    font-size: 16px;
-    color: rgb(51, 51, 51);
   }
 `;
 
