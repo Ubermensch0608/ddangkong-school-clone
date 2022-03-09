@@ -1,5 +1,6 @@
 import React from "react";
 import MainLogo from "/public/assets/logo.png";
+import MainLogoWhite from "/public/assets/logo_white.png";
 import CartIcon from "/public/assets/cart-icon.png";
 import HamburgerIcon from "/public/assets/hamburger-icon.png";
 import styled from "styled-components";
@@ -11,7 +12,12 @@ const Header = () => {
     <MainHeader>
       <MainNav>
         <NavContents>
-          <LogoImage src={MainLogo} alt="main-logo" width={154.5} height={50} />
+          <LogoImage
+            src={MainLogoWhite}
+            alt="main-logo"
+            width={154.5}
+            height={50}
+          />
           <RightAside>
             <Link href={"/bookPurchase"}>도서구매</Link>
             <div>

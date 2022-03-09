@@ -108,6 +108,13 @@ export const HighLightDesc = styled(Description)`
     background-image: url("assets/star 2.png");
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (max-width: 767px) {
+      width: 35px;
+      height: 35px;
+      margin-left: -15px;
+      margin-top: -15px;
+    }
   }
 
   &::after {
@@ -115,8 +122,8 @@ export const HighLightDesc = styled(Description)`
     position: absolute;
     display: flex;
     margin-left: 0px;
-    margin-top: -10px;
-    width: 240px;
+    margin-top: -5px;
+    width: 230px;
     height: 11px;
     background-image: url("assets/line.png");
     background-repeat: no-repeat;
@@ -124,6 +131,8 @@ export const HighLightDesc = styled(Description)`
 
     @media (max-width: 767px) {
       width: 140px;
+      height: 7px;
+      margin-top: -2px;
     }
   }
 `;
