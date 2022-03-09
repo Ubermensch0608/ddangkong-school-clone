@@ -1,7 +1,7 @@
 import React from "react";
 
 import styled from "styled-components";
-import BookCarousel from "./BookCarousel/BookCarousel";
+import BookCarouselSection from "./BookCarousel/BookCarouselSection";
 import BrandIntroduce from "./BrandIntroduce/BrandIntroduce";
 import MainIntro from "./MainIntro/MainIntro";
 
@@ -11,7 +11,7 @@ const FullPage = () => {
       <Sections>
         <MainIntro />
         <BrandIntroduce />
-        <BookCarousel />
+        <BookCarouselSection />
       </Sections>
     </SectionWrapper>
   );
