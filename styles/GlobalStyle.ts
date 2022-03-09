@@ -16,6 +16,11 @@ const GlobalStyle = createGlobalStyle`
     color: #333333;
     }
 
+    div, span{
+        position: relative;
+        box-sizing: border-box;
+    }
+
     a {
     color: inherit;
     text-decoration: none;

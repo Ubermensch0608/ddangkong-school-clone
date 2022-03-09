@@ -1,6 +1,7 @@
 import React from "react";
 
 import styled from "styled-components";
+import BrandIntroduce from "./BrandIntroduce/BrandIntroduce";
 import MainIntro from "./MainIntro/MainIntro";
 
 const FullPage = () => {
@@ -8,6 +9,7 @@ const FullPage = () => {
     <SectionWrapper>
       <Sections>
         <MainIntro />
+        <BrandIntroduce />
       </Sections>
     </SectionWrapper>
   );
