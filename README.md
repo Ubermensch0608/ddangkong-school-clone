@@ -23,3 +23,7 @@ Next.js 9버전부터 pages 디렉토리가 src 디렉토리 하위에서 역할
 <a href='https://nextjs.org/blog/next-9-1#src-directory-support'>Nextjs 개발팀 공식문서</a>
 
 ## 구현 기능
+
+[x] UI 애니메이션
+
+- 마우스 스크롤 유도
