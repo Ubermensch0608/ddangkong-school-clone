@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 
 import SLIDE_DATA from "../../utils/SLIDE_DATA";
-
 import styled from "styled-components";
 
 const BookCarousel = () => {
