@@ -1,9 +1,11 @@
 import React from "react";
 
-import styled from "styled-components";
 import BookCarouselSection from "./BookCarousel/BookCarouselSection";
 import BrandIntroduce from "./BrandIntroduce/BrandIntroduce";
+import LiveVideo from "./LiveVideo/LiveVideo";
 import MainIntro from "./MainIntro/MainIntro";
+
+import styled from "styled-components";
 
 const FullPage = () => {
   return (
@@ -11,6 +13,7 @@ const FullPage = () => {
       <Sections>
         <MainIntro />
         <BrandIntroduce />
+        <LiveVideo />
         <BookCarouselSection />
       </Sections>
     </SectionWrapper>
