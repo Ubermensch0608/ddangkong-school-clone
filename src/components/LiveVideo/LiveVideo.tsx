@@ -1,30 +1,36 @@
 import React from "react";
-import styled from "styled-components";
-import { FadeInContent } from "../BookCarousel/BookDescription";
+import Image from "next/image";
+
+import TabletBodyImage from "/public/assets/tablet-body.png";
+import TabletBodyImageMiddle from "/public/assets/tablet-body-middle.png";
+import TabletBodyImageSmall from "/public/assets/tablet-body-small.png";
 import { SectionWrapper } from "../Layout/SectionWrapper";
+import LiveVideoDesc from "./LiveVideoDesc";
+
+import styled from "styled-components";
 
 const LiveVideo = () => {
+  const VIDEO_INTERNAL_URL = "/assets/video/main-video.mp4";
+
   return (
     <SectionWrapper>
       <LiveVideoSection>
         <LiveVideoContents>
-          <DescriptionWrapper>
-            <DescriptionContent>
-              <FadeInContent>
-                <div>
-                  <DescTitle>랜선 라이브 북클래스</DescTitle>
-                </div>
-              </FadeInContent>
-              <FadeInContent>
-                <div>
-                  <DescSubTitle>
-                    친구들과 함께 그림 그리기, 퀴즈 풀기, 선생님과 대화하며
-                    경험해요!
-                  </DescSubTitle>
-                </div>
-              </FadeInContent>
-            </DescriptionContent>
-          </DescriptionWrapper>
+          <LiveVideoDesc />
+
+          <TabletVideoContent>
+            <Image
+              src={TabletBodyImage}
+              alt="tablet-body"
+              layout="responsive"
+            />
+
+            <VideoHolder>
+              <Video loop playsInline muted autoPlay>
+                <source src={VIDEO_INTERNAL_URL} type="video/mp4" />
+              </Video>
+            </VideoHolder>
+          </TabletVideoContent>
         </LiveVideoContents>
       </LiveVideoSection>
     </SectionWrapper>
@@ -75,66 +81,72 @@ export const LiveVideoContents = styled.div`
   }
 `;
 
-export const DescriptionWrapper = styled.div`
+export const TabletVideoContent = styled.div`
   position: absolute;
-  top: 100px;
+  width: 360px;
+  height: 345px;
+  top: 233px;
 
   @media (min-width: 768px) {
-    top: 150px;
+    top: 340px;
+    width: 768px;
+    height: 662px;
   }
 
   @media (min-width: 1200px) {
-    left: 30px;
-    top: 350px;
+    top: 31px;
+    right: -251px;
+    width: 1118px;
+    height: 880px;
+  }
+
+  img {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
   }
 `;
 
-export const DescriptionContent = styled.div`
+export const VideoHolder = styled.div`
+  position: absolute;
+  width: 304px;
+  height: 228px;
+  left: 28px;
+  top: 60px;
+
+  @media (min-width: 768px) {
+    width: 620px;
+    height: 497px;
+    left: 75px;
+    top: 81px;
+  }
+
   @media (min-width: 1200px) {
-    -webkit-box-pack: center;
-    justify-content: center;
+    position: absolute;
+    width: 866px;
+    height: 650px;
+    left: 125px;
+    top: 113px;
+    border-radius: 15px;
   }
 `;
 
-export const DescTitle = styled.div`
-  font-size: 30px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.33;
-  letter-spacing: normal;
-  text-align: center;
-  color: rgb(51, 51, 51);
-
-  white-space: pre-wrap;
+export const Video = styled.video`
+  object-fit: fill;
+  width: 304px;
+  height: 228px;
+  border-radius: 6px;
 
   @media (min-width: 768px) {
-    font-size: 50px;
-    line-height: 1.4;
-    text-align: center;
+    width: 620px;
+    height: 497px;
+    border-radius: 8px;
   }
 
   @media (min-width: 1200px) {
-    font-size: 50px;
-    line-height: 1.4;
-    text-align: left;
-  }
-`;
-
-export const DescSubTitle = styled(DescTitle)`
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 1.75;
-  margin-top: 50px;
-
-  @media (min-width: 768px) {
-    font-size: 24px;
-    line-height: 1.67;
-  }
-
-  @media (min-width: 1200px) {
-    font-size: 24px;
-    line-height: 1.67;
+    width: 867px;
+    height: 651px;
+    border-radius: 15px;
   }
 `;
 

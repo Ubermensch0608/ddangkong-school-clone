@@ -5,15 +5,15 @@ const GlobalStyle = createGlobalStyle`
     ${reset}
 
     * {
-    box-sizing: border-box;
+        box-sizing: border-box;
     }
 
     html,
     body {
-    padding: 0;
-    margin: 0;
-    font-family: 'Noto Sans KR', sans-serif;
-    color: #333333;
+        padding: 0;
+        margin: 0;
+        font-family: 'Noto Sans KR', sans-serif;
+        color: #333333;
     }
 
     div, span{
@@ -22,8 +22,13 @@ const GlobalStyle = createGlobalStyle`
     }
 
     a {
-    color: inherit;
-    text-decoration: none;
+        color: inherit;
+        text-decoration: none;
+    }
+
+    img{
+        image-rendering: -webkit-optimize-contrast;
+        backface-visibility: hidden;
     }
 `;
 
