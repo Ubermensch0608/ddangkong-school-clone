@@ -101,9 +101,9 @@ export const TabletVideoContent = styled.div`
   }
 
   img {
-    overflow-x: hidden;
-    width: 100%;
-    height: 100%;
+    overflow-x: hidden !important;
+    width: 100% !important;
+    height: 100% !important;
   }
 `;
 
