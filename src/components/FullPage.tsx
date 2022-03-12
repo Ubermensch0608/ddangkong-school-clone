@@ -7,6 +7,7 @@ import MainIntro from "./MainIntro/MainIntro";
 
 import styled from "styled-components";
 import SelectedBook from "./SelectedBook/SelectedBook";
+import CrossDevice from "./CrossDevice/CrossDevice";
 
 const FullPage = () => {
   return (
@@ -16,6 +17,7 @@ const FullPage = () => {
         <BrandIntroduce />
         <LiveVideo />
         <SelectedBook />
+        <CrossDevice />
         <BookCarouselSection />
       </Sections>
     </SectionWrapper>
