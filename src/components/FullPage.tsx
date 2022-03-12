@@ -6,6 +6,7 @@ import LiveVideo from "./LiveVideo/LiveVideo";
 import MainIntro from "./MainIntro/MainIntro";
 
 import styled from "styled-components";
+import SelectedBook from "./SelectedBook/SelectedBook";
 
 const FullPage = () => {
   return (
@@ -14,6 +15,7 @@ const FullPage = () => {
         <MainIntro />
         <BrandIntroduce />
         <LiveVideo />
+        <SelectedBook />
         <BookCarouselSection />
       </Sections>
     </SectionWrapper>
