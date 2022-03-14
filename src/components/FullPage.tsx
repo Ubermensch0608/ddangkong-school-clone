@@ -8,6 +8,7 @@ import MainIntro from "./MainIntro/MainIntro";
 import styled from "styled-components";
 import SelectedBook from "./SelectedBook/SelectedBook";
 import CrossDevice from "./CrossDevice/CrossDevice";
+import ReadingDiary from "./ReadingDiary/ReadingDiary";
 
 const FullPage = () => {
   return (
@@ -18,6 +19,7 @@ const FullPage = () => {
         <LiveVideo />
         <SelectedBook />
         <CrossDevice />
+        <ReadingDiary />
         <BookCarouselSection />
       </Sections>
     </SectionWrapper>

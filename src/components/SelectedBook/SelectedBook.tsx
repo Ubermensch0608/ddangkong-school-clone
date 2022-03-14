@@ -97,7 +97,7 @@ const SelectedBookInnerContents = styled.div`
 
 export const DescContent = styled.div``;
 
-const TitleDesc = styled.div`
+export const TitleDesc = styled.div`
   white-space: pre-wrap;
   font-size: 30px;
   font-weight: bold;
