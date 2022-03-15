@@ -28,13 +28,15 @@ const ReadingDiary = () => {
             </DiarySubDesc>
           </InnerDesc>
 
-          <BookContentImages>
-            <Image src={DiaryImage1} alt="diary__1" />
-            <Image src={DiaryImage2} alt="diary__2" />
-            <Image src={DiaryImage3} alt="diary__3" />
-            <Image src={DiaryImage4} alt="diary__4" />
-            <Image src={DiaryImageMain} alt="diary__main" />
-          </BookContentImages>
+          <div>
+            <BookContentImages>
+              <Image src={DiaryImage1} alt="diary__1" />
+              <Image src={DiaryImage2} alt="diary__2" />
+              <Image src={DiaryImage3} alt="diary__3" />
+              <Image src={DiaryImage4} alt="diary__4" />
+              <Image src={DiaryImageMain} alt="diary__main" />
+            </BookContentImages>
+          </div>
         </ReadingDiaryInner>
       </SectionWrapper>
     </SectionWrapper>
@@ -63,53 +65,50 @@ export const DiarySubDesc = styled(SubDesc)`
 
 export const BookContentImages = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: center;
-  padding: 0 20px;
+  padding: 20px 0;
   width: 100%;
   @media (min-width: 768px) {
-    flex-direction: column;
-    align-items: center;
+    padding: 50px 0;
   }
   @media (min-width: 1200px) {
-    flex-direction: column;
-    align-items: center;
+    padding: 50px 0;
   }
   > span {
     :nth-child(1) {
       position: relative !important;
-      top: 80px !important;
-      left: -100px !important;
-      width: 400px !important;
+      top: -115px !important;
+      left: 270px !important;
+      width: 450px !important;
       z-index: 1 !important;
 
       @media (min-width: 768px) {
         width: 240px !important;
-        top: 100px !important;
-        left: -280px !important;
+        top: -30px !important;
+        left: 220px !important;
       }
       @media (min-width: 1200px) {
         width: 368px !important;
-        top: 100px !important;
-        left: -390px !important;
+        top: -100px !important;
+        left: 280px !important;
       }
     }
     :nth-child(2) {
       position: relative !important;
-      top: 120px !important;
-      left: -100px !important;
-      width: 400px !important;
+      top: 170px !important;
+      left: -180px !important;
+      width: 450px !important;
       z-index: 1 !important;
 
       @media (min-width: 768px) {
         width: 240px !important;
-        top: 150px !important;
-        left: -280px !important;
+        top: 140px !important;
+        left: -20px !important;
       }
       @media (min-width: 1200px) {
         width: 368px !important;
-        top: 170px !important;
-        left: -390px !important;
+        top: 190px !important;
+        left: -90px !important;
       }
     }
     :nth-child(3) {
@@ -123,14 +122,14 @@ export const BookContentImages = styled.div`
       @media (min-width: 768px) {
         display: block !important;
         width: 240px !important;
-        top: -171px !important;
-        left: 270px !important;
+        top: -30px !important;
+        left: 222px !important;
       }
       @media (min-width: 1200px) {
         display: block !important;
         width: 368px !important;
-        top: -316px !important;
-        left: 390px !important;
+        top: -100px !important;
+        left: 360px !important;
       }
     }
     :nth-child(4) {
@@ -142,32 +141,32 @@ export const BookContentImages = styled.div`
       @media (min-width: 768px) {
         display: block !important;
         width: 240px !important;
-        top: -121px !important;
-        left: 270px !important;
+        top: 140px !important;
+        left: -20px !important;
       }
       @media (min-width: 1200px) {
         display: block !important;
         width: 368px !important;
-        top: -258px !important;
-        left: 390px !important;
+        top: 190px !important;
+        left: -8px !important;
       }
     }
     :nth-child(5) {
       position: relative !important;
       width: 300px !important;
-      top: -420px !important;
-      left: 300px !important;
+      top: 20px !important;
+      left: -120px !important;
       z-index: 1 !important;
 
       @media (min-width: 768px) {
         width: 200px !important;
-        top: -480px !important;
-        left: 0px !important;
+        top: 50px !important;
+        left: -480px !important;
       }
       @media (min-width: 1200px) {
         width: 303px !important;
-        top: -780px !important;
-        left: 0 !important;
+        top: 50px !important;
+        left: -750px !important;
       }
     }
   }
