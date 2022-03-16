@@ -9,6 +9,7 @@ import styled from "styled-components";
 import SelectedBook from "./SelectedBook/SelectedBook";
 import CrossDevice from "./CrossDevice/CrossDevice";
 import ReadingDiary from "./ReadingDiary/ReadingDiary";
+import BookClipSection from "./BookClip/BookClipSection";
 
 const FullPage = () => {
   return (
@@ -21,6 +22,7 @@ const FullPage = () => {
         <CrossDevice />
         <ReadingDiary />
         <BookCarouselSection />
+        <BookClipSection />
       </Sections>
     </SectionWrapper>
   );
