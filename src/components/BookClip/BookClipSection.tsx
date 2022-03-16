@@ -3,6 +3,8 @@ import { FadeInContent } from "../BookCarousel/BookDescription";
 import { SectionWrapper } from "../Layout/SectionWrapper";
 import BookClipInnerTitle from "./BookClipInnerTitle";
 import BookClipIcon1 from "/public/assets/BookClip/book-clip-icon1.png";
+import BookClipIcon2 from "/public/assets/BookClip/book-clip-icon2.png";
+import BookClipIcon3 from "/public/assets/BookClip/book-clip-icon3.png";
 
 import styled from "styled-components";
 import Image from "next/image";
@@ -19,16 +21,51 @@ const BookClipSection = () => {
                 <div>
                   <InnerBookClip>
                     <Image src={BookClipIcon1} alt="book-clip-icon__1" />
-                    <div>
+                    <InnerContentWrapper>
                       <div>화상수업</div>
-                    </div>
-                    <div>
+                    </InnerContentWrapper>
+                    <InnerContentWrapper>
                       <div>
                         휴대폰이나 태블릿으로 시간이나 장소 관계없이 편하게
                         수업을 들어보세요.
                       </div>
-                    </div>
+                    </InnerContentWrapper>
                   </InnerBookClip>
+                </div>
+              </FadeInContent>
+            </div>
+            <div>
+              <FadeInContent>
+                <div>
+                  <InnerBookClip2>
+                    <Image src={BookClipIcon2} alt="book-clip-icon__2" />
+                    <InnerContentWrapper>
+                      <div>양방향</div>
+                    </InnerContentWrapper>
+                    <InnerContentWrapper>
+                      <div>
+                        화면에 그림도 그려보고, 읽은 책으로 선생님과 퀴즈도
+                        풀어보는 양방향 수업을 경험해보세요.
+                      </div>
+                    </InnerContentWrapper>
+                  </InnerBookClip2>
+                </div>
+              </FadeInContent>
+            </div>
+            <div>
+              <FadeInContent>
+                <div>
+                  <InnerBookClip3>
+                    <Image src={BookClipIcon3} alt="book-clip-icon__3" />
+                    <InnerContentWrapper>
+                      <div>캐릭터</div>
+                    </InnerContentWrapper>
+                    <InnerContentWrapper>
+                      <div>
+                        친숙한 캐릭터와 목소리로 수업에 대한 부담을 낮춰보세요.
+                      </div>
+                    </InnerContentWrapper>
+                  </InnerBookClip3>
                 </div>
               </FadeInContent>
             </div>
@@ -111,18 +148,20 @@ export const InnerBookClip = styled.div`
   }
 
   > span {
-    width: 80px !important;
-    height: 80px !important;
-    margin-top: 200px !important;
+    width: 60px !important;
+    height: 60px !important;
+    margin-top: 130px !important;
 
     @media (min-width: 768px) {
-      width: 116px !important;
-      height: 116px !important;
+      width: 80px !important;
+      height: 80px !important;
+      margin-top: 205px !important;
     }
 
     @media (min-width: 1200px) {
-      width: 116px !important;
-      height: 116px !important;
+      width: 80px !important;
+      height: 80px !important;
+      margin-top: 200px !important;
     }
   }
 
@@ -170,10 +209,31 @@ export const InnerBookClip = styled.div`
         @media (min-width: 1200px) {
           font-size: 20px;
           line-height: 1.8;
+          max-width: 214px;
         }
       }
     }
   }
+`;
+
+export const InnerContentWrapper = styled.div`
+  margin: 0px auto;
+  margin-top: 20px;
+
+  @media (min-width: 768px) {
+    margin-top: 30px;
+  }
+  @media (min-width: 1200px) {
+    margin-top: 30px;
+  }
+`;
+
+export const InnerBookClip2 = styled(InnerBookClip)`
+  background-image: url("/assets/BookClip/book-clip2.png");
+`;
+
+export const InnerBookClip3 = styled(InnerBookClip)`
+  background-image: url("/assets/BookClip/book-clip3.png");
 `;
 
 export default BookClipSection;
