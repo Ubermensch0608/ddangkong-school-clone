@@ -10,6 +10,7 @@ import SelectedBook from "./SelectedBook/SelectedBook";
 import CrossDevice from "./CrossDevice/CrossDevice";
 import ReadingDiary from "./ReadingDiary/ReadingDiary";
 import BookClipSection from "./BookClip/BookClipSection";
+import DownloadSection from "./DownloadSection/DownloadSection";
 
 const FullPage = () => {
   return (
@@ -23,6 +24,7 @@ const FullPage = () => {
         <ReadingDiary />
         <BookCarouselSection />
         <BookClipSection />
+        <DownloadSection />
       </Sections>
     </SectionWrapper>
   );

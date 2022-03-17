@@ -1,6 +1,7 @@
 import React from "react";
-import styled from "styled-components";
 import { FadeInContent } from "../BookCarousel/BookDescription";
+
+import styled from "styled-components";
 
 const BookClipInnerTitle = () => {
   return (
